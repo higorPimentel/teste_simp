@@ -23,17 +23,11 @@ if(isset($_POST['hd_envia'])) {
         
         foreach ( $arrayExcluir as $row ) { 
 
-            $existeCaractExclui = strpos(strtoupper($text_entrada), $row);
-            
-            if($existeCaractExclui =="") {
-
-                $textReplace =   str_replace($row, "", strtoupper($text_entrada));
-                $text_entrada = $textReplace;
-
-            }
-            
-            
+            $textReplace =   str_replace($row, "", strtoupper($text_entrada));
+            $text_entrada = $textReplace;
         }        
+            
+           
 
         if(empty($text_entrada)) {
             $text_entrada = "Nenhum Valor Localizado";
@@ -48,6 +42,8 @@ if(isset($_POST['hd_envia'])) {
     }
 
        
+
+
     /*
     
         OPÇÃO 2

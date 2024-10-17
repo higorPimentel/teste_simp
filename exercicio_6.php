@@ -37,7 +37,7 @@ if(isset($_POST['hd_envia'])) {
     
                 $stringNova = substr($text_entrada, 0, $l) . substr($text_entrada, $l + 1);
                 $stringInvertida = strrev($stringNova);
-               
+                               
                 if($stringNova == $stringInvertida) { 
                     $validPalidromo = 1;
                 }

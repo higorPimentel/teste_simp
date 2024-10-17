@@ -9,13 +9,20 @@
 
         body{
             font-family: sans-serif;
+            background-color:#f1f0f0;
         }
 
         h1{
             margin-right:500px; 
             color:gray;
         }
-
+        
+        h2 {
+            color:gray;
+            margin-left:80px;
+            margin-top:80px;
+        }
+            
 
         p{
             margin-right:500px; 
@@ -31,10 +38,21 @@
             border:none;
         }
 
+        .hs{
+            height:1px;
+            width:80%;
+            margin-top:30px;
+            margin-left:80px;
+            margin-bottom:30px;
+            background-color:rgb(219, 217, 217);
+            border:none;
+        }
+
         .frm-envio {
             display: flex;
             flex-wrap: wrap;
             border:solid 1px rgb(228, 228, 228);
+            background-color:white;
             margin:100px;
             padding-top:30px;
             padding-bottom:30px;
@@ -56,6 +74,11 @@
             border:solid 1px rgb(192, 187, 187);
             outline:none;
             border-radius:2px;  
+        }
+
+        .input_entrada_frm7 { 
+            width: 250px;
+            margin-left:20px;
         }
 
         .btn{
@@ -105,11 +128,24 @@
             padding: 0.75rem;
             vertical-align: top;
             border-top: 1px solid #dee2e6;
+            text-align: center;
         }
 
         .table thead th {
             vertical-align: bottom;
             border-bottom: 2px solid #dee2e6;
+            text-align: center;
+            background-color:#1C1C1C;
+            color:white;
+        }
+
+        .table tbody tr{
+            transition:0.5s;
+        }
+
+
+        .table tbody tr:hover { 
+            background-color:#E8E8E8;
         }
 
         .table tbody + tbody {
