@@ -43,35 +43,28 @@ if(isset($_POST['hd_envia'])) {
 
 ?>
 
-
 <body>
-
     <form class="frm-envio" action=""  method="POST">
-        
         <input name="hd_envia" type="hidden" value="1">  
-        
         <div class="row">
             <h1><?=$title?></h1>
-        </div>
-        
+        </div>        
         <div class="row">
-            <input class="input_entrada" type="text" name="text_entrada">
+            <input class="input_entrada" type="number" id="text_entrada" name="text_entrada">
             <button class="btn">Enviar</button>
         </div>
-
         <div class="row">
             <p><?=$retorno?></p>
         </div>
-
         <hr>
         <div class="row">
-             <a href="index.php"><input class="btn_voltar" type="button" value="Voltar"></a>
+            <a href="index.php"><input class="btn_voltar" type="button" value="Voltar"></a>
         </div>
-       
-
-
-
     </form>
-    
+
+    <?php
+        include_once('script.php');
+    ?>
+        
 </body>
 </html>
